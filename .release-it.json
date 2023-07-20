@@ -1,6 +1,12 @@
 {
   "git": {
-    "commitMessage": "chore: release v${version}"
+    "commitMessage": "chore(release): 🚀 v${version}",
+    "requireBranch": ["main"],
+    "requireCommits": true,
+    "requireCleanWorkingDir": true,
+    "commit": true,
+    "tag": true,
+    "push": true
   },
   "github": {
     "release": true
@@ -11,7 +17,11 @@
   "plugins": {
     "@release-it/conventional-changelog": {
       "preset": "angular",
-      "infile": "CHANGELOG.md"
+      "infile": "CHANGELOG.md",
+      "header": "# Changelog"
     }
+  },
+  "hooks": {
+    "after:release": "echo Successfully released ${name} v${version} to ${repo.repository}."
   }
 }
