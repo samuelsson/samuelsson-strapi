@@ -9,7 +9,8 @@
     "build": "strapi build",
     "strapi": "strapi",
     "prepare": "husky install",
-    "cm": "npx git-cz"
+    "cm": "npx git-cz",
+    "release": "release-it"
   },
   "author": {
     "name": "Erik Samuelsson"
@@ -25,8 +26,10 @@
   "devDependencies": {
     "@commitlint/cli": "^17.6.7",
     "@commitlint/config-conventional": "^17.6.7",
+    "@release-it/conventional-changelog": "^7.0.0",
     "git-cz": "^4.9.0",
-    "husky": "^8.0.3"
+    "husky": "^8.0.3",
+    "release-it": "^16.1.2"
   },
   "dependencies": {
     "@strapi/plugin-i18n": "4.11.7",
