@@ -7,7 +7,9 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "prepare": "husky install",
+    "cm": "npx git-cz"
   },
   "author": {
     "name": "Erik Samuelsson"
@@ -20,7 +22,12 @@
     "npm": ">=6.0.0"
   },
   "license": "MIT",
-  "devDependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.7",
+    "@commitlint/config-conventional": "^17.6.7",
+    "git-cz": "^4.9.0",
+    "husky": "^8.0.3"
+  },
   "dependencies": {
     "@strapi/plugin-i18n": "4.11.7",
     "@strapi/plugin-users-permissions": "4.11.7",
