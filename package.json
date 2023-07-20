@@ -10,7 +10,7 @@
     "strapi": "strapi",
     "prepare": "husky install",
     "cm": "npx git-cz",
-    "release": "release-it"
+    "release": "dotenv release-it --"
   },
   "author": {
     "name": "Erik Samuelsson"
@@ -27,6 +27,7 @@
     "@commitlint/cli": "^17.6.7",
     "@commitlint/config-conventional": "^17.6.7",
     "@release-it/conventional-changelog": "^7.0.0",
+    "dotenv-cli": "^7.2.1",
     "git-cz": "^4.9.0",
     "husky": "^8.0.3",
     "release-it": "^16.1.2"
